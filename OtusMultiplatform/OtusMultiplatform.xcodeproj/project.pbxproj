@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EA61CC225811BD500D5D7B9 /* OtusMultiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA61CAF25811BD300D5D7B9 /* OtusMultiplatformApp.swift */; };
+		5EA61CC325811BD500D5D7B9 /* OtusMultiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA61CAF25811BD300D5D7B9 /* OtusMultiplatformApp.swift */; };
+		5EA61CC625811BD500D5D7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA61CB125811BD500D5D7B9 /* Assets.xcassets */; };
+		5EA61CC725811BD500D5D7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA61CB125811BD500D5D7B9 /* Assets.xcassets */; };
+		5EA61ED425812B4F00D5D7B9 /* TVShowsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5EA61ED325812B4F00D5D7B9 /* TVShowsLibrary */; };
+		5EA61EDC258133DF00D5D7B9 /* TVShowsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5EA61EDB258133DF00D5D7B9 /* TVShowsLibrary */; };
+		5EA61F1A258135C100D5D7B9 /* TVShowsUIModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5EA61F19258135C100D5D7B9 /* TVShowsUIModule */; };
+		5EA61F212581388800D5D7B9 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA61F1F2581388800D5D7B9 /* AppConfig.swift */; };
+		5EA61F222581388800D5D7B9 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA61F1F2581388800D5D7B9 /* AppConfig.swift */; };
+		5EA61F28258138A800D5D7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA61F27258138A800D5D7B9 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EA61CAF25811BD300D5D7B9 /* OtusMultiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusMultiplatformApp.swift; sourceTree = "<group>"; };
+		5EA61CB125811BD500D5D7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EA61CB625811BD500D5D7B9 /* OtusMultiplatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusMultiplatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA61CB925811BD500D5D7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA61CBE25811BD500D5D7B9 /* OtusMultiplatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusMultiplatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA61CC025811BD500D5D7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA61CC125811BD500D5D7B9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5EA61ECD25812B2600D5D7B9 /* TVShowsLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TVShowsLibrary; sourceTree = "<group>"; };
+		5EA61F162581357000D5D7B9 /* TVShowsUIModule */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TVShowsUIModule; sourceTree = "<group>"; };
+		5EA61F1F2581388800D5D7B9 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		5EA61F27258138A800D5D7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EA61CB325811BD500D5D7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA61EDC258133DF00D5D7B9 /* TVShowsLibrary in Frameworks */,
+				5EA61F1A258135C100D5D7B9 /* TVShowsUIModule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA61CBB25811BD500D5D7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA61ED425812B4F00D5D7B9 /* TVShowsLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EA61CA925811BD300D5D7B9 = {
+			isa = PBXGroup;
+			children = (
+				5EA61CAE25811BD300D5D7B9 /* Shared */,
+				5EA61CB825811BD500D5D7B9 /* iOS */,
+				5EA61CBF25811BD500D5D7B9 /* macOS */,
+				5EA61CB725811BD500D5D7B9 /* Products */,
+				5EA61ED025812B4A00D5D7B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5EA61CAE25811BD300D5D7B9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5EA61E592581287B00D5D7B9 /* Modules */,
+				5EA61CAF25811BD300D5D7B9 /* OtusMultiplatformApp.swift */,
+				5EA61F1F2581388800D5D7B9 /* AppConfig.swift */,
+				5EA61F27258138A800D5D7B9 /* AppDelegate.swift */,
+				5EA61CB125811BD500D5D7B9 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5EA61CB725811BD500D5D7B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EA61CB625811BD500D5D7B9 /* OtusMultiplatform.app */,
+				5EA61CBE25811BD500D5D7B9 /* OtusMultiplatform.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EA61CB825811BD500D5D7B9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5EA61CB925811BD500D5D7B9 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		5EA61CBF25811BD500D5D7B9 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5EA61CC025811BD500D5D7B9 /* Info.plist */,
+				5EA61CC125811BD500D5D7B9 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		5EA61E592581287B00D5D7B9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5EA61F162581357000D5D7B9 /* TVShowsUIModule */,
+				5EA61ECD25812B2600D5D7B9 /* TVShowsLibrary */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5EA61ED025812B4A00D5D7B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EA61CB525811BD500D5D7B9 /* OtusMultiplatform (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA61CCA25811BD500D5D7B9 /* Build configuration list for PBXNativeTarget "OtusMultiplatform (iOS)" */;
+			buildPhases = (
+				5EA61CB225811BD500D5D7B9 /* Sources */,
+				5EA61CB325811BD500D5D7B9 /* Frameworks */,
+				5EA61CB425811BD500D5D7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OtusMultiplatform (iOS)";
+			packageProductDependencies = (
+				5EA61EDB258133DF00D5D7B9 /* TVShowsLibrary */,
+				5EA61F19258135C100D5D7B9 /* TVShowsUIModule */,
+			);
+			productName = "OtusMultiplatform (iOS)";
+			productReference = 5EA61CB625811BD500D5D7B9 /* OtusMultiplatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EA61CBD25811BD500D5D7B9 /* OtusMultiplatform (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA61CCD25811BD500D5D7B9 /* Build configuration list for PBXNativeTarget "OtusMultiplatform (macOS)" */;
+			buildPhases = (
+				5EA61CBA25811BD500D5D7B9 /* Sources */,
+				5EA61CBB25811BD500D5D7B9 /* Frameworks */,
+				5EA61CBC25811BD500D5D7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OtusMultiplatform (macOS)";
+			packageProductDependencies = (
+				5EA61ED325812B4F00D5D7B9 /* TVShowsLibrary */,
+			);
+			productName = "OtusMultiplatform (macOS)";
+			productReference = 5EA61CBE25811BD500D5D7B9 /* OtusMultiplatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EA61CAA25811BD300D5D7B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					5EA61CB525811BD500D5D7B9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					5EA61CBD25811BD500D5D7B9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 5EA61CAD25811BD300D5D7B9 /* Build configuration list for PBXProject "OtusMultiplatform" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EA61CA925811BD300D5D7B9;
+			productRefGroup = 5EA61CB725811BD500D5D7B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EA61CB525811BD500D5D7B9 /* OtusMultiplatform (iOS) */,
+				5EA61CBD25811BD500D5D7B9 /* OtusMultiplatform (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EA61CB425811BD500D5D7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA61CC625811BD500D5D7B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA61CBC25811BD500D5D7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA61CC725811BD500D5D7B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EA61CB225811BD500D5D7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA61F28258138A800D5D7B9 /* AppDelegate.swift in Sources */,
+				5EA61CC225811BD500D5D7B9 /* OtusMultiplatformApp.swift in Sources */,
+				5EA61F212581388800D5D7B9 /* AppConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA61CBA25811BD500D5D7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA61CC325811BD500D5D7B9 /* OtusMultiplatformApp.swift in Sources */,
+				5EA61F222581388800D5D7B9 /* AppConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5EA61CC825811BD500D5D7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EA61CC925811BD500D5D7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5EA61CCB25811BD500D5D7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDCQ43FS8W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = quantag.OtusMultiplatform;
+				PRODUCT_NAME = OtusMultiplatform;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EA61CCC25811BD500D5D7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDCQ43FS8W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = quantag.OtusMultiplatform;
+				PRODUCT_NAME = OtusMultiplatform;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EA61CCE25811BD500D5D7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SDCQ43FS8W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quantag.OtusMultiplatform;
+				PRODUCT_NAME = OtusMultiplatform;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5EA61CCF25811BD500D5D7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SDCQ43FS8W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quantag.OtusMultiplatform;
+				PRODUCT_NAME = OtusMultiplatform;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EA61CAD25811BD300D5D7B9 /* Build configuration list for PBXProject "OtusMultiplatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA61CC825811BD500D5D7B9 /* Debug */,
+				5EA61CC925811BD500D5D7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA61CCA25811BD500D5D7B9 /* Build configuration list for PBXNativeTarget "OtusMultiplatform (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA61CCB25811BD500D5D7B9 /* Debug */,
+				5EA61CCC25811BD500D5D7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA61CCD25811BD500D5D7B9 /* Build configuration list for PBXNativeTarget "OtusMultiplatform (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA61CCE25811BD500D5D7B9 /* Debug */,
+				5EA61CCF25811BD500D5D7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EA61ED325812B4F00D5D7B9 /* TVShowsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TVShowsLibrary;
+		};
+		5EA61EDB258133DF00D5D7B9 /* TVShowsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TVShowsLibrary;
+		};
+		5EA61F19258135C100D5D7B9 /* TVShowsUIModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TVShowsUIModule;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5EA61CAA25811BD300D5D7B9 /* Project object */;
+}
