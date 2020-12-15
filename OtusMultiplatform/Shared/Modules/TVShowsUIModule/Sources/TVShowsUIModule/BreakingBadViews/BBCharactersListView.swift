@@ -7,6 +7,7 @@ struct BBCharactersListView: View {
     @EnvironmentObject private var navModel: NavControllerViewModel
     
     var body: some View {
+        #if os(iOS) || os(macOS) 
         List(self.viewModel.listDataSource.indices, id: \.self) { index in
             BBCharacterCell(character: self.viewModel.listDataSource[index])
                 .onAppear() {
@@ -17,6 +18,19 @@ struct BBCharactersListView: View {
                     navModel.push(BBCharacterDetailsView(character: self.viewModel.listDataSource[index]))
                 }
         }
+        #else
+        NavigationView {
+            List(self.viewModel.listDataSource.indices, id: \.self) { index in
+                NavigationLink(destination: BBCharacterDetailsView(character: self.viewModel.listDataSource[index])) {
+                    BBCharacterCell(character: self.viewModel.listDataSource[index])
+                        .onAppear() {
+                            self.viewModel.fetchIfRequired(index: index)
+                        }
+                }
+            }
+        }
+        
+        #endif
     }
 }
     

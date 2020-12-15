@@ -5,22 +5,30 @@ struct RMCharacterDetailsView: View {
     var character: RMCharacter
     var body: some View {
         
-        VStack {
-            FakeNavBar(label: "Characters list")
-            Spacer()
-            RMPropertyView(propertyTitle: "Name", propertyValue: character.name)
-            RMPropertyView(propertyTitle: "Status", propertyValue: character.status)
-            RMPropertyView(propertyTitle: "Species", propertyValue: character.species)
-            RMPropertyView(propertyTitle: "Gender", propertyValue: character.gender)
-            NavPushButton(destination:
-                            RMCharacterImageView(withURL: character.image)){
-                Text("Show character image")
-                    .foregroundColor(.blue)
-                    .font(.title2)
-            Spacer()
+            VStack {
+                FakeNavBar(label: "Characters list")
+                Spacer()
+                RMPropertyView(propertyTitle: "Name", propertyValue: character.name)
+                RMPropertyView(propertyTitle: "Status", propertyValue: character.status)
+                RMPropertyView(propertyTitle: "Species", propertyValue: character.species)
+                RMPropertyView(propertyTitle: "Gender", propertyValue: character.gender)
+                #if os(iOS) || os(macOS)
+                NavPushButton(destination:
+                                RMCharacterImageView(withURL: character.image)){
+                    Text("Show character image")
+                        .foregroundColor(.blue)
+                        .font(.title2)
+                    Spacer()
+                    
+                }
+                #else
+                NavigationLink(destination: RMCharacterImageView(withURL: character.image)) {
+                    Text("Show character image")
+                        .foregroundColor(.blue)
+                        .font(.title2)
+                }
+                #endif
             }
-    
-        }
     }
 }
 

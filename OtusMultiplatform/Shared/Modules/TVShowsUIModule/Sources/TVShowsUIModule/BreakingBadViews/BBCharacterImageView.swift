@@ -16,14 +16,17 @@ struct BBCharacterImageView: View {
             Image(uiImage: characterImageViewModel.characterImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-//                .frame(width:300, height:300)
+                //                .frame(width:300, height:300)
                 .onAppear(perform: {
                     characterImageViewModel.loadCharacterImage()
                 })
+                .modifier(FocusView())
+
             Spacer()
         }
     }
 }
+
 
 struct BBCharacterImageView_Previews: PreviewProvider {
     static var previews: some View {

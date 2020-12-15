@@ -14,6 +14,7 @@ struct BBCharacterDetailsView: View {
             BBPropertyView(propertyTitle: "Birthday", propertyValue: character.birthday)
             BBPropertyView(propertyTitle: "Nickname", propertyValue: character.nickname)
             BBPropertyView(propertyTitle: "Actor", propertyValue: character.portrayed)
+            #if os(iOS) || os(macOS)
             NavPushButton(destination:
                             BBCharacterImageView(withURL: character.img)){
                 Text("Show character image")
@@ -21,7 +22,13 @@ struct BBCharacterDetailsView: View {
                     .font(.title2)
                 Spacer()
             }
-            
+            #else
+            NavigationLink(destination:  BBCharacterImageView(withURL: character.img)) {
+                Text("Show character image")
+                    .foregroundColor(.blue)
+                    .font(.title2)
+            }
+            #endif
         }
     }
 }

@@ -18,7 +18,9 @@ struct RMCharacterImageView: View {
                 .aspectRatio(contentMode: .fit)
                 .onAppear(perform: {
                     characterImageViewModel.loadCharacterImage()
-            })
+                })
+                .modifier(FocusView())
+      
             Spacer()
         }
     }

@@ -72,9 +72,13 @@ struct NavPushButton<Label, Destination>: View where Label: View, Destination: V
     }
     
     var body: some View {
+        #if os(iOS) || os(macOS)
         label.onTapGesture {
             self.push()
         }
+        #else
+        EmptyView()
+        #endif
     }
     
     private func push() {
@@ -97,9 +101,13 @@ struct NavPopButton<Label>: View where Label: View {
     }
     
     var body: some View {
+        #if os(iOS) || os(macOS)
         label.onTapGesture {
             self.pop()
         }
+        #else
+        EmptyView()
+        #endif
     }
     
     private func pop() {
@@ -232,18 +240,19 @@ struct FakeNavBar: View {
     @EnvironmentObject private var viewModel: NavControllerViewModel
     
     let label: String
-
+    
     var body: some View {
+        #if os(iOS) || os(macOS)
         ZStack {
             HStack {
                 if viewModel.currentScreen != nil {
                     backView
-                    .simultaneousGesture(TapGesture()
-                        .onEnded {
-                            self.viewModel.pop(to: .previous)
-                        }
-                    )
-                    .padding(.top, UIDevice.current.hasNotch ? 40 : 20)
+                        .simultaneousGesture(TapGesture()
+                                                .onEnded {
+                                                    self.viewModel.pop(to: .previous)
+                                                }
+                        )
+                        .padding(.top, UIDevice.current.hasNotch ? 40 : 20)
                 }
                 Spacer()
             }
@@ -257,6 +266,9 @@ struct FakeNavBar: View {
                 .font(Font.body.weight(.bold))
                 .padding(.top, UIDevice.current.hasNotch ? 40 : 20)
         }
+        #else
+        EmptyView()
+        #endif
     }
     
     var backView: some View {

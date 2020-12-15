@@ -7,6 +7,8 @@ struct RMCharactersListView: View {
     @EnvironmentObject private var navModel: NavControllerViewModel
     
     var body: some View {
+        
+        #if os(iOS) || os(macOS)
         List(self.viewModel.listDataSource.indices, id: \.self) { index in
             RMCharacterCell(character: self.viewModel.listDataSource[index])
                 .onAppear() {
@@ -17,6 +19,18 @@ struct RMCharactersListView: View {
                     navModel.push(RMCharacterDetailsView(character: self.viewModel.listDataSource[index]))
                 }
         }
+        #else
+        NavigationView {
+            List(self.viewModel.listDataSource.indices, id: \.self) { index in
+                NavigationLink(destination: RMCharacterDetailsView(character: self.viewModel.listDataSource[index])) {
+                    RMCharacterCell(character: self.viewModel.listDataSource[index])
+                        .onAppear() {
+                            self.viewModel.fetchIfRequired(index: index)
+                        }
+                }
+            }
+        }
+        #endif
     }
     
 }
